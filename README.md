@@ -6,9 +6,9 @@ Proyecto dedicado a documentar, estandarizar y automatizar las operaciones de co
 
 ## Estructura y Archivos del Repositorio
 Este espacio almacena los siguientes recursos diseñados en **PSeInt**:
-Semana1 Todos los 4 ejercicios + 1 del ejemplo, con su index y .pse y el README
-Semana2 Todos los 4 ejercicios + 1 del ejemplo, con su index y .pse y el README
-Semana3 Todos los 4 ejercicios con su index y .pse y el README
+1. Semana1 Todos los 4 ejercicios + 1 del ejemplo, con su index y .pse y el README
+2. Semana2 Todos los 4 ejercicios + 1 del ejemplo, con su index y .pse y el README
+3. Semana3 Todos los 4 ejercicios con su index y .pse y el README
 
 # Rueda Libre Algoritmia ESTAN en la carpeta algoritmios 
 1. `algoritmos/01_cotizacion_basica.psc`: Programa secuencial encargado de liquidar el valor a pagar por el alquiler individual de bicicletas urbanas según la cantidad de horas.
