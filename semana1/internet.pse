@@ -1,0 +1,21 @@
+Algoritmo Nivel_Internet
+	Definir megas Como Entero
+	
+	Escribir "Digite cuantas megas de internet tiene:"
+	Leer megas
+	
+	Si megas > 50 Entonces
+		Escribir "Internet rapido: Puedes ver videos en 4K y jugar sin lag"
+	SiNo
+		Si megas >= 10 Y megas <= 50 Entonces
+			Escribir "Internet normal: Sirve para estudiar y redes"
+		SiNo
+			Si megas > 0 Y megas < 10 Entonces
+				Escribir "Internet lento: Se puede caer la llamada"
+			SiNo
+				Escribir "Error: ese numero de megas no existe"
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo

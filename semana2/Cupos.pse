@@ -1,0 +1,21 @@
+Algoritmo ControlCupos
+	Definir cupos Como Entero
+	
+	Escribir "Digite la cantidad de cupos disponibles:"
+	Leer cupos
+	
+	Si cupos < 0 Entonces
+		Escribir "Dato incorrecto: no puede ser negativo"
+	SiNo
+		Si cupos = 0 Entonces
+			Escribir "Rojo: Parqueadero lleno"
+		SiNo
+			Si cupos <= 10 Entonces
+				Escribir "Amarillo: Quedan pocos lugares"
+			SiNo
+				Escribir "Verde: Parqueadero habilitado"
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo

@@ -1,0 +1,33 @@
+Algoritmo ParqueaderoSimple
+	Definir horas Como Entero
+	Definir pagar Como Real
+	Definir factura Como Caracter
+	
+	Escribir "Horas en el parqueadero:"
+	Leer horas
+	
+	Si horas <= 0 Entonces
+		Escribir "Error: las horas deben ser mayor a 0"
+	SiNo
+		Escribir "Tiene factura? (S/N):"
+		Leer factura
+		
+		// Si tiene factura le restamos 2 horas
+		Si Mayusculas(factura) = "S" Entonces
+			horas <- horas - 2
+		FinSi
+		
+		// Calculamos cuanto paga
+		Si horas <= 0 Entonces
+			pagar <- 0
+		SiNo
+			Si horas > 6 Entonces
+				pagar <- 20000
+			SiNo
+				pagar <- horas * 3000
+			FinSi
+		FinSi
+		
+		Escribir "Total a pagar: $", pagar
+	FinSi
+FinAlgoritmo

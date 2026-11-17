@@ -1,0 +1,21 @@
+Algoritmo Promedio_Gastos_Semanales
+	Definir gasto1, gasto2, gasto3, gasto4, promedio Como Real
+	
+	Escribir "=== PROMEDIO DE GASTOS SEMANALES ==="
+	
+	Escribir "Ingresa el gasto de la semana 1:"
+	Leer gasto1
+	
+	Escribir "Ingresa el gasto de la semana 2:"
+	Leer gasto2
+	
+	Escribir "Ingresa el gasto de la semana 3:"
+	Leer gasto3
+	
+	Escribir "Ingresa el gasto de la semana 4:"
+	Leer gasto4
+	
+	promedio <- (gasto1 + gasto2 + gasto3 + gasto4) / 4
+	
+	Escribir "El gasto promedio de las cuatro semanas es: $", promedio
+FinAlgoritmo

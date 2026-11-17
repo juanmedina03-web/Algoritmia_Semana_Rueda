@@ -1,0 +1,20 @@
+Algoritmo ValidarLicencia
+	Definir edad Como Entero
+	Definir examen Como Caracter
+	
+	Escribir "Digite su edad actual:"
+	Leer edad
+	
+	Escribir "Aprobo el examen teorico (S/N):"
+	Leer examen
+	
+	examen <- Mayusculas(examen)
+	
+	// Aplicando De Morgan: negamos (edad >= 18 Y examen = "S")
+	Si edad < 18 O examen <> "S" Entonces
+		Escribir "No cumple los requisitos para la licencia"
+	SiNo
+		Escribir "Felicidades, puede reclamar su licencia"
+	FinSi
+	
+FinAlgoritmo

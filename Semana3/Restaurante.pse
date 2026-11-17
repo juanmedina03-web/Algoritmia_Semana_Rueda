@@ -1,0 +1,53 @@
+SubProceso totalComida <- calcularPlatos(cantPlatos)
+	Definir i Como Entero
+	Definir precio, totalComida Como Real
+	totalComida <- 0
+	
+	Para i <- 1 Hasta cantPlatos Hacer
+		Escribir "Digite el valor del plato ", i, ":"
+		Leer precio
+		totalComida <- totalComida + precio
+	FinPara
+FinSubProceso
+
+SubProceso valorPropina <- calcularPropina(subtotal, quierePropina)
+	Definir valorPropina Como Real
+	Si Mayusculas(quierePropina) = "S" Entonces
+		valorPropina <- subtotal * 0.10
+	SiNo
+		valorPropina <- 0
+	FinSi
+FinSubProceso
+
+SubProceso mostrarTicket(subtotal, propina, totalFinal)
+	Escribir "----------------------------"
+	Escribir "   FACTURA DEL RESTAURANTE  "
+	Escribir "----------------------------"
+	Escribir "Subtotal platos: $", subtotal
+	Escribir "Propina (10%):   $", propina
+	Escribir "TOTAL A PAGAR:   $", totalFinal
+	Escribir "----------------------------"
+FinSubProceso
+
+Algoritmo FacturaRestaurante
+	Definir numPlatos Como Entero
+	Definir sub, prop, total Como Real
+	Definir respuesta Como Caracter
+	
+	Escribir "Cuantos platos pidio la mesa:"
+	Leer numPlatos
+	
+	Si numPlatos <= 0 Entonces
+		Escribir "Error: debe pedir al menos 1 plato"
+	SiNo
+		sub <- calcularPlatos(numPlatos)
+		
+		Escribir "Desea incluir propina del 10%? (S/N):"
+		Leer respuesta
+		
+		prop <- calcularPropina(sub, respuesta)
+		total <- sub + prop
+		
+		mostrarTicket(sub, prop, total)
+	FinSi
+FinAlgoritmo

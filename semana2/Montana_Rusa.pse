@@ -1,0 +1,17 @@
+Algoritmo MontañaRusa
+	Definir estatura Como Entero
+	Definir mareo Como Caracter
+	
+	Escribir "Cuanto mides en centimetros:"
+	Leer estatura
+	Escribir "Sufres de mareos o del corazon (S/N):"
+	Leer mareo
+	mareo <- Mayusculas(mareo)
+	
+	Si estatura >= 140 Y mareo = "N" Entonces
+		Escribir "Puedes subir al juego"
+	SiNo
+		Escribir "Por seguridad no puedes subir"
+	FinSi
+	
+FinAlgoritmo

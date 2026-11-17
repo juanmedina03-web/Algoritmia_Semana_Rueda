@@ -1,0 +1,25 @@
+Algoritmo CajaTienda
+	Definir venta, totalVendido Como Real
+	Definir clientes Como Entero
+	
+	totalVendido <- 0
+	clientes <- 0
+	
+	Escribir "Digite el valor de la venta (0 para cerrar caja):"
+	Leer venta
+	
+	Mientras venta <> 0 Hacer
+		Si venta > 0 Entonces
+			totalVendido <- totalVendido + venta
+			clientes <- clientes + 1
+		SiNo
+			Escribir "Error: el valor debe ser positivo"
+		FinSi
+		
+		Escribir "Digite el valor de la venta (0 para cerrar caja):"
+		Leer venta
+	FinMientras
+	
+	Escribir "Clientes atendidos: ", clientes
+	Escribir "Total vendido en el dia: $", totalVendido
+FinAlgoritmo

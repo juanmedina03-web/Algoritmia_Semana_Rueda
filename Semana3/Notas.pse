@@ -1,0 +1,32 @@
+Algoritmo NotasEscuela
+	Definir cont, ganaron Como Entero
+	Definir calificacion, totalNotas, notaMax, notaMin Como Real
+	Definir hayReprobados Como Lógico
+	totalNotas <- 0
+	ganaron <- 0
+	notaMax <- -1
+	notaMin <- 6
+	hayReprobados <- Falso
+	Para cont<-1 Hasta 5 Hacer
+		Escribir 'Digite la calificacion del alumno ', cont, ':'
+		Leer calificacion
+		totalNotas <- totalNotas+calificacion
+		Si calificacion>=3.0 Entonces
+			ganaron <- ganaron+1
+		SiNo
+			hayReprobados <- Verdadero
+		FinSi
+		Si calificacion>notaMax Entonces
+			notaMax <- calificacion
+		FinSi
+		Si calificacion<notaMin Entonces
+			notaMin <- calificacion
+		FinSi
+	FinPara
+	Escribir 'Promedio del grupo: ', totalNotas/5
+	Escribir 'Total que aprobaron: ', ganaron
+	Escribir 'Mayor nota: ', notaMax, ' | Menor nota: ', notaMin
+	Si hayReprobados Entonces
+		Escribir 'Aviso: hay alumnos que deben presentar nivelacion'
+	FinSi
+FinAlgoritmo

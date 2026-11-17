@@ -1,0 +1,16 @@
+Algoritmo EsBisiesto
+	Definir anio, r4, r100, r400 Como Entero
+	
+	Escribir "Ingrese el anio a consultar:"
+	Leer anio
+	
+	r4 <- anio % 4
+	r100 <- anio % 100
+	r400 <- anio % 400
+	
+	Si (r4 = 0 Y r100 <> 0) O r400 = 0 Entonces
+		Escribir anio, " es un anio bisiesto"
+	SiNo
+		Escribir anio, " es un anio normal"
+	FinSi
+FinAlgoritmo

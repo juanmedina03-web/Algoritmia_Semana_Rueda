@@ -1,0 +1,20 @@
+Algoritmo Consumo_Electrico_Mensual
+	Definir watts, horasDia, precioKwh, kwhMes, costoMensual Como Real
+	
+	Escribir '=== CALCULADORA DE CONSUMO ELECTRICO ==='
+	
+	Escribir 'Ingresa la potencia del equipo en Watts (W):'
+	Leer watts
+	
+	Escribir 'Ingresa las horas de uso diario:'
+	Leer horasDia
+	
+	Escribir 'Ingresa el valor del kWh en pesos:'
+	Leer precioKwh
+	
+	kwhMes <- (watts * horasDia * 30) / 1000
+	costoMensual <- kwhMes * precioKwh
+	
+	Escribir 'Consumo total al mes: ', kwhMes, ' kWh'
+	Escribir 'Costo estimado en la factura: $', costoMensual
+FinAlgoritmo

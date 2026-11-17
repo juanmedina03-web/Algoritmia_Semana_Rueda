@@ -1,0 +1,23 @@
+Algoritmo Hamburguesas
+	Definir cantidadBurgers Como Entero
+	Definir gramosCarneTotal Como Real
+	Definir gramosPorBurger Como Real
+	Definir salsa Como Real
+	
+	Escribir 'Gramos de carne molida que compraste:'
+	Leer gramosCarneTotal
+	Escribir 'Cuantas hamburguesas vas a preparar:'
+	Leer cantidadBurgers
+	Escribir 'Salsa extra (en gramos):'
+	Leer salsa
+	
+	Si cantidadBurgers > 0 Entonces
+		gramosPorBurger <- gramosCarneTotal / cantidadBurgers
+		salsa <- gramosCarneTotal / 100 
+		Escribir 'Carne total usada: ', gramosCarneTotal, ' gr'
+		Escribir 'Cada hamburguesa queda re gruesa de: ', gramosPorBurger, ' gr'
+		Escribir 'Ponle esta cantidad de salsa secreta: ', salsa
+	SiNo
+		Escribir 'Error: Debes hacer al menos 1 hamburguesa para comer'
+	FinSi
+FinAlgoritmo
