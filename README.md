@@ -3,12 +3,18 @@
 Proyecto dedicado a documentar, estandarizar y automatizar las operaciones de cobro y atención al cliente para el servicio de alquiler de bicicletas **Rueda Libre**, mediante soluciones lógicas desarrolladas en pseudocódigo.
 
 ## Estructura y Archivos del Repositorio
-
 Este espacio almacena los siguientes recursos diseñados en **PSeInt**:
+Semana1 Todos los 4 ejercicios + 1 del ejemplo, con su index y .pse y el README
+Semana2 Todos los 4 ejercicios + 1 del ejemplo, con su index y .pse y el README
+Semana3 Todos los 4 ejercicios con su index y .pse y el README
+
+# Rueda Libre Algoritmia ESTAN en la carpeta algoritmios 
 1. `algoritmos/01_cotizacion_basica.psc`: Programa secuencial encargado de liquidar el valor a pagar por el alquiler individual de bicicletas urbanas según la cantidad de horas.
 2. `algoritmos/02_cotizacion_recorrido.psc`: Herramienta de cotización para tours guiados que calcula el costo total, el abono inicial del 30 % y el valor restante por cubrir.
 3. `algoritmos/03_cuenta_grupo.psc`: Versión inicial (v0.1) del asistente de taquilla que consolida alquileres y recorridos grupales, suma la contribución voluntaria del 10 % y ajusta la cuota individual hacia arriba al múltiplo de 100 más cercano.
-4. `diagramas/02_cotizacion_recorrido.png`: Representación gráfica del flujo lógico correspondiente al algoritmo de recorridos guiados.
+4. `Todos los diagramas de los anteriores`: Representación gráfica del flujo lógico correspondiente al algoritmo de recorridos guiados con index y .pse
+5. `BITACORA`
+6. `README`
 
 ## Guía de Ejecución en PSeInt
 
