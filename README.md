@@ -1,5 +1,7 @@
 # Rueda Libre · Sistema de Algoritmia y Atención en Taquilla (v0.1)
 
+# Repositorio :  https://github.com/juanmedina03-web/Algoritmia_Semana_Rueda.git
+
 Proyecto dedicado a documentar, estandarizar y automatizar las operaciones de cobro y atención al cliente para el servicio de alquiler de bicicletas **Rueda Libre**, mediante soluciones lógicas desarrolladas en pseudocódigo.
 
 ## que trae el .ZIP:
